@@ -1,0 +1,144 @@
+TODO / WISHLIST
+
+The following items are not ordered by amount of work.
+
+
+* start with fullscreen
+* theme-ing
+* tiling emacs "frames"
+* platform-support (macos, linux)
+dig out and support simple feature checks based on the host os
+
+* command-prompt
+have something like META-SHIFT-P on VS Code (essentially minibuffer in the middle)
+have a look at ivy-posframe
+
+* remote ssh
+do simple remote things you'd do in a terminal now
+
+
+* programming-language/framework support
+This is a big one. Tbd: prioritize, figure out cross cutting concerns,
+bundle up configs to different ecosystems, etc.
+
+- typescript/javascript
+- react, angular, vue, htmx, svelte
+- java, core lib, 
+- rust, core lib
+- nodejs core lib
+- clojure, lisp, elisp
+- elixir/erlang
+- swift
+- kotlin
+- tailwind
+- scss/sass
+- markdown, mdx
+  
+* magit
+set up and relearn the magic of magit
+
+* tdd support
+figure out how to have a proper test runner for chosen ecosystems
+next to a code editor. red/green sad/happy view. list all tests.
+
+* debugging
+figure out how to support debugging (breakpoints, inspect stack, eval, etc.)
+across all prioritized ecosystems from above.
+
+* repl
+figure out how to conveniently repl in all prioritized ecosystems to
+boost exploration and development.
+
+* evil-mode
+should be already installed. todo: figure out search using "/" key.
+
+* chatgpt
+integrate with commonly known llm apis, e.g. chatgpt. ref to existing
+solutions.
+
+* prettier
+figure out prettier solutions across all prioritized ecosystems.
+
+* terminal
+look at vterm, eterm, et all to find the currently best solution to have
+an iTerm2 alike DX across all platforms.
+
+* misc
+** json queries, e.g. jq
+it would be really nice to be able to query given json files and show the
+output in a buffer. could be something like piping the filename and query
+into an emacs-external jq binary and piping its stdout back into an emacs
+buffer.
+
+** sql queries to local/remote postgres/XYZ instances
+have support for explorative db work for local and remote postgres/mysql/
+mariadb/whatever databases. like TablePlus but in emacs.
+
+* package management (e.g. https://github.com/radian-software/straight.el)
+figure out if package.el or straight or elpaca are good. also have a look
+at nix package manager. maybe just use git-submodule? maybe bang your head
+against a wall.
+
+* xwidgets
+emacs-plus has a nicely patched current version of emacs running smoothly
+on macos which also brings support for xwidgets. But why stop here, let's
+look into the internals and see its support for elisp scripting and potential
+usage for other problems than browsing (eg html mail).
+
+* email
+Apple Mail stinks and Thunderbird is a bit quirky. mutt would be a good light
+client but mail from within emacs would be best. feature wishlist: fulltext
+search, junk mail handling, support for a dozen mailboxes, mark messages,
+view html mail in xwidget/external browser window, don't blindly download
+html assets, write text and html mail, mail signatures.
+
+* music, podcasts
+If we can get rid of even more natively bloated macos programs, why not
+replace Apple Music/Podcasts with a neat emacs version. essentially we're
+talking about a cli mp3 player.
+
+* notes (org)
+Already there. Restart using it.
+
+* landing screen
+how about creating a nice individual landing screen? It could replace the
+slightly clumsy default emacs "*GNU Emacs*" screen and add a little
+useful interactivity, e.g.
+- activity
+- recent files
+- monitoring
+- projects
+
+* mastodon
+there is already mastodon.el. Try it out. Seems like a nice UI (how is it
+implemented?)
+
+* matrix
+find a nice matrix client to replace the clumsy web one on the desktop.
+
+* cloud clients
+the web dashboards of the popular cloud providers are getting more and
+more clumsy and weird. but they all have an API, so maybe we can create
+a nice (huge) UI for different cloud providers, e.g aws, gcloud, azure,
+hetzner cloud clients
+
+* kubernetes client
+this probably already exists. but as an emacs mode, it will better inte-
+grate into existing workflows.
+
+* yasnippet
+already exists. dig it out and reactivate snippets. compare usage with
+whatever llms are capable of. probably keep snippets rather big, since
+removing from existing working code is easier than assembling a set
+of higher level snippets.
+
+* minimap
+already exists. dig it out and activate.
+
+* emacs-server
+already exists. figure out if better run on workstation or remote server.
+make emacsclient start blazingly fast.
+
+* hacker news
+there must be a nice elisp based client. try it out and optionally include
+it into the daily process.
