@@ -8,7 +8,7 @@
 ;;(package-refresh-contents)
 
 ;; pixel-based scroll with bezier scrolling dynamics
-(add-to-list 'load-path "/Users/nico/code/good-scroll.el")
+(add-to-list 'load-path "~/code/good-scroll.el")
 (require 'good-scroll)
 (good-scroll-mode 1)
 
